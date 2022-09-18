@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign_up form</title>
+</head>
+<body>
+    <div id="container">
+        <nav>
+            <figure>
+                <img src="../Untitled.jpg" alt="Logo">
+            </figure>
+            <ul type="none" class="ul">
+                <li class="li"><a href="index.html">Home</a></li>
+                <li class="li"><a href="">About</a></li>
+                <li class="li"><a href="">Services</a></li>
+                <li class="li"><a href="">Contact</a></li>
+            </ul>
+            <a href="#" class="log">Login</a>
+        </nav>
+        <div id="formWrap">
+            <figure class="fImage">
+                <img src="phone.png" width="400" alt="display">
+            </figure>
+            <form action="" method="get">
+                <fieldset>
+                    <legend>Profile</legend>
+                    <div class="name">
+                        <input type="text" name="name" placeholder="enter your username" minLength="10" maxlength="20" title="enter your name">
+                        <input type="text" name="name" placeholder="enter your last name">
+                    </div>
+                    <div class="password">
+                        <input type="password" value="123" pattern="[0-9]{4}">
+                        <input type="password" class="confirmPwd" pattern="[0-9]{4}">
+                    </div>
+                    <div class="gender">
+                        <!-- <select name="" id=""> 
+                            <option value="male">male</option>
+                            <option value="female">female</option>
+                            <option value="custom">custom</option>
+                        </select>-->
+                        <label for="male">Male:<input type="radio" name=select></label>
+                        <label for="Fmale">Female:<input type="radio" name="select"></label>
+                        <label for="custom">Custom:<input type="radio" name=select></label>
+                    </div>
+                    <div class="file">
+                        <h2>Upload your cv</h2>
+                        <input type="file">
+                    </div>
+                    <button type="submit">submit</button>
+                </fieldset>
+            </form>
+        </div>
+        
+    </div>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #container{
+            background-color: grey;
+            height: 100vh;
+        }
+        nav{
+            background-color: orange;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .ul{
+            display: flex;
+            justify-content: space-between;
+            /* align-items: center; */
+        }
+        .li{
+            margin-left: 2em;
+        }
+        .li:nth-child(3) a{
+            text-decoration: none;
+            color:red;
+            background-color: white;
+        }
+        fieldset{
+            background-color: black;
+            color:white;
+            width:50vw;
+            height: 80vh;
+        }
+        #formWrap{
+            display: flex;
+            justify-content: space-between;
+        }
+        
+    </style>
+</body>
+</html>

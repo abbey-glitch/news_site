@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+</head>
+<body>
+    <div id="container">
+        <nav>
+            <figure>
+                <img src="/Untitled.jpg" alt="Logo">
+            </figure>
+            <ul type="none" class="ul">
+                <li class="li"><a href="">Home</a></li>
+                <li class="li"><a href="">About</a></li>
+                <li class="li"><a href="">Services</a></li>
+                <li class="li"><a href="">Contact</a></li>
+            </ul>
+            <a href="signUp.html" class="log">Login</a>
+        </nav>
+        <main>
+            <aside>
+                <h3>Blogs</h3>
+                <p>Lorem ipsum dolor sit amet, 
+                    consectetur adipisicing elit. Id sapiente labore vitae quisquam repellat provident maiores pariatur quis, 
+                    similique reprehenderit totam eveniet temporibus incidunt ipsam minima. 
+                    Pariatur minus mollitia atque!</p>
+            </aside>
+            <section>
+                <h3>This is bigger section</h3>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <div id="end">
+            <div class="newsLetter">
+                <h3>News letter</h3>
+                <input type="text" placeholder="enter a feed back">
+            </div>
+            <div class="quickLinks">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <div id="right">
+                <h3>Contact</h3>
+                <address>
+                    2, oweh street, jibowu-yaba.
+                </address>
+            </div>
+        </div>
+    </footer>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* flex-direction: row; */
+        }
+        .ul{
+            display: flex;
+        }
+        .li{
+            margin-left: 2em;
+        }
+        .li a{
+            text-decoration: none;
+            color: white;
+        }
+        .log{
+            text-decoration: none;
+            color: red;
+            border: .2em ridge aliceblue;
+            background-color: white;
+        }
+        .li:hover a{
+            color:green;
+            background-color: white;
+        }
+        .log:hover{
+            transition: all .2s linear;
+            color: black;
+            transform: scale(0.5);
+        }
+        aside{
+            background-color: grey;
+            width: 40vw;
+        }
+        section{
+            width: 55vw;
+        }
+        main{
+            display: flex;
+            height: 100vh;
+            justify-content: space-between;
+        }
+        #end{
+            background-color: black;
+            color: aliceblue;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row-reverse;
+        }
+        input[type="text"]{
+            padding: .5em;
+            outline: none;
+            /* border-top-right-radius: 2em; */
+        }
+    </style>
+</body>
+</html>
